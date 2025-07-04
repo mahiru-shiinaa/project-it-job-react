@@ -7,7 +7,7 @@ function CheckOtpForm(props) {
   const { onFinish, onResend } = props;
 
   // Khai báo biến trạng thái để lưu số giây đếm ngược
-  const [countdown, setCountdown] = useState(30);
+  const [countdown, setCountdown] = useState(60);
 
   // useEffect này sẽ chạy mỗi khi giá trị countdown thay đổi
   useEffect(() => {
