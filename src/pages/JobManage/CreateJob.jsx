@@ -1,4 +1,4 @@
-import { Form, message, Modal } from "antd";
+import { Form, message,  } from "antd";
 
 import { useEffect, useState } from "react";
 import { getListTag } from "../../services/tagServices";
@@ -6,7 +6,6 @@ import { getListCity } from "../../services/cityServices";
 import GoBack from "../../components/Goback";
 import { createJob } from "../../services/jobServices";
 import JobDetailForm from "../../components/Form/JobDetailForm";
-import ChangePasswordForm from "../../components/Form/ChangePasswordForm";
 
 function CreateJob() {
   const [form] = Form.useForm();
