@@ -1,0 +1,104 @@
+.job-detail {
+  padding: 24px;
+
+  &__header {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #222;
+    margin: 50px 0 50px 0; // thêm khoảng cách phía dưới
+  }
+
+  &__info {
+    margin-bottom: 32px;
+
+    .ant-col {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    span {
+      font-weight: 500;
+      color: #333;
+      margin-right: 7px;
+    }
+
+    strong {
+      color: #111;
+      font-weight: 600;
+    }
+
+    .ant-tag {
+      margin-top: 4px;
+      margin-right: 8px;
+    }
+    &--tags {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+
+  &__meta {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  &__tags,
+  &__cities {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .ant-tag {
+      margin: 4px 8px 4px 0;
+    }
+  }
+
+  &__description,
+  &__company {
+    font-size: 18px;
+    margin-bottom: 32px;
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+
+  &__form {
+    background-color: #fafafa;
+    border-radius: 8px;
+
+    .ant-form-item-label > label {
+      font-weight: 500;
+    }
+
+    .ant-btn {
+      padding: 0 32px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+}

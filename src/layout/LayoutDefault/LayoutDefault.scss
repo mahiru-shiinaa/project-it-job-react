@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #f1f1f1;
+}
+
+.header {
+  &__logodefault {
+    font-weight: 800;
+    font-size: 30px;
+    a {
+      text-decoration: none;
+      color: #0471ff;
+    }
+  }
+}
+
+main {
+  padding: 25px 0px;
+  min-height: calc(100vh - 40px);
+}
+
+.menu {
+  nav {
+    a {
+      margin-left: 10px;
+    }
+  }
+}
+
+footer {
+  padding: 6px 0px;
+  text-align: center;
+  background-color: #232323;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
