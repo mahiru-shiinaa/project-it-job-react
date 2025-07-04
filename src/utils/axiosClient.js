@@ -24,7 +24,7 @@ axiosClient.interceptors.request.use(
 axiosClient.interceptors.response.use(
   (response) => response.data, // chỉ lấy `data` cho gọn
   (error) => {
-  //  console.error("API error:", error.response);
+    console.error("API error:", error.response);
     return Promise.reject(error);
   }
 );

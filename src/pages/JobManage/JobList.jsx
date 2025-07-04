@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import { useEffect, useRef, useState } from "react";
-import { getListJobToCompany } from "../../services/jobServices";
+import { getJobByCompany } from "../../services/jobServices";
 import { Button, message, Table, Tag, Tooltip } from "antd";
 import { Link } from "react-router-dom";
 import { EyeOutlined } from "@ant-design/icons";
@@ -26,7 +26,7 @@ function JobList(props) {
   const searchInput = useRef(null); // Tham chiếu đến ô input tìm kiếm
   const fetchApi = async () => {
     try {
-      const result = await getListJobToCompany();
+      const result = await getJobByCompany();
       if (result) {
         result.forEach((item) => {
           item.createdAt = new Date(item.createdAt).toLocaleString();

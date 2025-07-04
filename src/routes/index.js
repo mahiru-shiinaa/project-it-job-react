@@ -77,7 +77,7 @@ export const routes = [
         element: <Job />,
       },
       {
-        path: "companys/info/:id",
+        path: "/companys/info/:id",
         element: <CompanyDetail />
       },
       {

@@ -4,7 +4,9 @@ export const getAllJob = () => get("jobs");
 
 export const  getDetailJob = (id) => get(`jobs/info/${id}`);
 
-export const getListJobToCompany = () => get("jobs/me");
+export const getListJobToCompany = (id) => get(`jobs/jobs-to-company/${id}`);
+
+export const getJobByCompany = () => get("jobs/me");
 
 export const createJob = (data) => post("jobs/create", data);
 

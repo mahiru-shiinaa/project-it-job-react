@@ -25,7 +25,7 @@ function CompanyDetail() {
     const fetchApi = async () => {
       try {
         const companydetail = await getDetailCompany(id);
-        const jobsToCompany = await getListJobToCompany();
+        const jobsToCompany = await getListJobToCompany(companydetail._id);
         if (companydetail && jobsToCompany) {
           setCompany(companydetail);
           const jobFinal = jobsToCompany.map((item) => ({
