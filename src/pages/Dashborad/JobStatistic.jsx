@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getListJobToCompany } from "../../services/jobServices";
+import { getJobByCompany } from "../../services/jobServices";
 import { Card, message } from "antd";
 import { useNavigate } from "react-router-dom";
 
@@ -10,7 +10,7 @@ function JobStatistic() {
   useEffect(() => {
     const fetchApi = async () => {
       try {
-        const result = await getListJobToCompany();
+        const result = await getJobByCompany();
         if (result) {
           const obj = {
             total: 0,
