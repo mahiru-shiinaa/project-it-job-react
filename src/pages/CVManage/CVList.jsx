@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef, useState } from "react";
 import { getListCVToCompany } from "../../services/cvServices";
-import { getListJobToCompany } from "../../services/jobServices";
+import { getJobByCompany } from "../../services/jobServices";
 import { Button, message, Table, Tag } from "antd";
 import DeleteCV from "./DeleteCV";
 import { EyeOutlined } from "@ant-design/icons";
@@ -25,7 +25,7 @@ function CVList(props) {
   const fetchApi = async () => {
     try {
       const result = await getListCVToCompany();
-      const job = await getListJobToCompany();
+      const job = await getJobByCompany();
       if (result) {
         const newData = result.map((item) => {
           const jobItem = job.find((job) => job._id === item.idJob);
