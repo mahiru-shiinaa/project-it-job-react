@@ -24,7 +24,7 @@ function Register() {
         });
       }, 3000);
 
-      setCookieCheck("email", values.email, 380);
+      setCookieCheck("email", values.email, 300);
     } catch (err) {
       messageApi.open({
         type: "error",

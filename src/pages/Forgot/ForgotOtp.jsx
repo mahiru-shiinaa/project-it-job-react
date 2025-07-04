@@ -17,7 +17,7 @@ function ForgotOtp() {
           type: "success",
           content: res.message || "Không thể lấy thông tin",
         });
-        setCookieCheck("resetToken", res.resetToken, 380);
+        setCookieCheck("resetToken", res.resetToken, 300);
         setTimeout(() => {
           navigate("/companys/password/reset");
         }, 3000);

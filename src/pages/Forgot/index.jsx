@@ -14,7 +14,7 @@ function Forgot() {
                 type: "success",
                 content: res.message || "Không thể lấy thông tin",
             })
-            setCookieCheck("email", values.email, 380);
+            setCookieCheck("email", values.email, 300);
             setTimeout(() => {
                 navigate("/companys/password/otp")
             },2000);
