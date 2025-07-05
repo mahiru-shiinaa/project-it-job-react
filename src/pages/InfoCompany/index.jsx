@@ -9,6 +9,7 @@ import ChangePasswordForm from "../../components/Form/ChangePasswordForm";
 import { changePassword } from "../../services/authServices";
 import { useTitle } from "../../hooks/useTitle";
 import DeleteCompany from "./DeleteCompany";
+import Container from "../../components/Container";
 const { TextArea } = Input;
 
 function InfoCompany() {
@@ -79,7 +80,7 @@ function InfoCompany() {
   };
   return (
     <>
-      {contextHolder}
+      <Container>{contextHolder}</Container>
       {info && (
         <>
           <Card

@@ -4,6 +4,7 @@ import { getAllJob } from "../../services/jobServices";
 import { Tag, Pagination, message } from "antd";
 import SearchList from "../../components/SearchForm/SearchList";
 import { useTitle } from "../../hooks/useTitle";
+import Container from "../../components/Container";
 
 function Search() {
   useTitle("Trang tìm kiếm / IT Job");
@@ -77,7 +78,7 @@ function Search() {
 
   return (
     <>
-      {contextHolder}
+      <Container>{contextHolder}</Container>
       <div className="mb-20">
         <strong>Kết quả tìm kiếm: </strong>
         {citySearch && <Tag>{citySearch}</Tag>}

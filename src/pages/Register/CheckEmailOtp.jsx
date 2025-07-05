@@ -9,6 +9,7 @@ import {
 import { message } from "antd";
 import { fetchUser } from "../../redux/actions/auth.action";
 import { useTitle } from "../../hooks/useTitle";
+import Container from "../../components/Container";
 
 function CheckEmailOtp() {
   useTitle("Check Email / IT Job");
@@ -57,7 +58,7 @@ function CheckEmailOtp() {
 
   return (
     <>
-      {contextHolder}
+      <Container>{contextHolder}</Container>
       <CheckOtpForm onResend={onResend} onFinish={onFinish} />
     </>
   );

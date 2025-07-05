@@ -56,7 +56,7 @@ function Register() {
   };
   return (
     <>
-      {contextHolder}
+      <Container>{contextHolder}</Container>
       <Spin
         spinning={spinning}
         tip={

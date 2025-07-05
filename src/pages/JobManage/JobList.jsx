@@ -8,6 +8,7 @@ import { EyeOutlined } from "@ant-design/icons";
 import EditJob from "./EditJob";
 import DeleteJob from "./DeleteJob";
 import getColumnSearchProps from "../../helpers/getColumnSearchProps";
+import Container from "../../components/Container";
 
 function JobList(props) {
   const { className = "" } = props;
@@ -150,7 +151,7 @@ function JobList(props) {
   ];
   return (
     <>
-      {contextHolder}
+      <Container>{contextHolder}</Container>
       <div className={className}>
         <Table
           columns={columns}

@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import CheckOtpForm from "../../components/Form/CheckOtpForm";
-import {  getCookie, setCookieCheck } from "../../helpers/cookie";
+import { getCookie, setCookieCheck } from "../../helpers/cookie";
 import { message } from "antd";
 import { otpPassword, resendOtpPassword } from "../../services/authServices";
 import { useTitle } from "../../hooks/useTitle";
+import Container from "../../components/Container";
 
 function ForgotOtp() {
   useTitle("Check OTP / IT Job");
@@ -51,7 +52,8 @@ function ForgotOtp() {
   //navigate("/companys/password/reset");
   return (
     <>
-      {contextHolder}
+      <Container>{contextHolder}</Container>
+
       <CheckOtpForm onFinish={onFinish} onResend={onResend} />
     </>
   );

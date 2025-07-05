@@ -1,6 +1,7 @@
 import { Button, message, Popconfirm } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
 import { deleteJob } from "../../services/jobServices";
+import Container from "../../components/Container";
 
 function DeleteJob(props) {
   const { handleReload, record } = props;
@@ -22,7 +23,7 @@ function DeleteJob(props) {
   
   return (
     <>
-    {contextHolder}
+    <Container>{contextHolder}</Container>
       <Popconfirm
         title="Xóa Job này?"
         description="Bạn có chắc muốn xóa Job này?"

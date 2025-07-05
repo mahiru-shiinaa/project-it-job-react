@@ -5,6 +5,7 @@ import JobDetailForm from "../../components/Form/JobDetailForm";
 import { updateJob } from "../../services/jobServices";
 import { getListTag } from "../../services/tagServices";
 import { getListCity } from "../../services/cityServices";
+import Container from "../../components/Container";
 
 function EditJob(props) {
   const { handleReload, record } = props;
@@ -65,7 +66,7 @@ function EditJob(props) {
   };
   return (
     <>
-      {contextHolder}
+      <Container>{contextHolder}</Container>
       <Tooltip title="Chỉnh sửa" color="blue">
         <Button
           color="primary"
