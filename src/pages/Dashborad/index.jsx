@@ -6,7 +6,7 @@ import InfoCompany from "./InfoCompany";
 import { useTitle } from "../../hooks/useTitle";
 
 function Dashboard() {
-    useTitle("Trang Dashborad - IT Job");
+    useTitle("Trang Dashborad / IT Job");
     return (
         <>
            <h1>Tổng quan</h1>

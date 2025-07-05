@@ -5,7 +5,7 @@ import JobList from "./JobList";
 import { useTitle } from "../../hooks/useTitle";
 
 function JobManage() {
-  useTitle("Quản lý job - IT Job");
+  useTitle("Quản lý job / IT Job");
   return (
     <>
       <h1>Danh sách việc làm</h1>

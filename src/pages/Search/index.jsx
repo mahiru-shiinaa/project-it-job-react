@@ -6,7 +6,7 @@ import SearchList from "../../components/SearchForm/SearchList";
 import { useTitle } from "../../hooks/useTitle";
 
 function Search() {
-  useTitle("Trang tìm kiếm - IT Job");
+  useTitle("Trang tìm kiếm / IT Job");
   const [searchParams, setSearchParams] = useSearchParams();
   const [data, setData] = useState([]);
   

@@ -135,10 +135,8 @@
 
 }
 .card-change-password {
-    max-width: 500px; 
     display: flex;
     padding: 40px;
-    padding-left: 60px;
   justify-content: center;
   align-items: center;    
   height: 70vh;          
@@ -299,4 +297,38 @@
 
 #registerForm > .ant-form-item {
     margin-bottom: 20px;
+}
+
+.card-delete-account {
+  max-width: 500px;
+  display: flex;
+  padding: 30px 50px;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+
+  &__icon {
+    text-align: center;
+
+    img {
+      width: 220px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    h3 {
+      margin-bottom: 5px;
+      font-size: 28px;
+    }
+
+    span {
+      margin-top: 13px;
+      font-size: 15px;
+      display: block;
+      margin-bottom: 35px;
+      color: #555;
+    }
+  }
 }

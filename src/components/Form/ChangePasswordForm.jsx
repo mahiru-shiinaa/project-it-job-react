@@ -1,6 +1,5 @@
 import { Button, Col, Form, Input, Row } from "antd";
 import reset from "../../assets/images/reset.png";
-import Container from "../Container";
 import "./Form.scss";
 import { runes } from "runes2";
 
@@ -8,7 +7,7 @@ function ChangePasswordForm(props) {
   const { onFinish , form } = props;
   return (
     <>
-      <Container>
+      
         <div className="card-change-password">
           <Row justify={"center"}>
             <Col span={24}>
@@ -123,7 +122,7 @@ function ChangePasswordForm(props) {
             </Col>
           </Row>
         </div>
-      </Container>
+     
     </>
   );
 }

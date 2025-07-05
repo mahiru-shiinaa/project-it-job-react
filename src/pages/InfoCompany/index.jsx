@@ -8,10 +8,11 @@ import { fetchUser } from "../../redux/actions/auth.action";
 import ChangePasswordForm from "../../components/Form/ChangePasswordForm";
 import { changePassword } from "../../services/authServices";
 import { useTitle } from "../../hooks/useTitle";
+import DeleteCompany from "./DeleteCompany";
 const { TextArea } = Input;
 
 function InfoCompany() {
-  useTitle("Admin Detail - IT Job");
+  useTitle("Admin Detail / IT Job");
   const [info, setInfo] = useState([]);
   const [isEdit, setIsEdit] = useState(false);
   const [form] = Form.useForm();
@@ -86,6 +87,7 @@ function InfoCompany() {
             extra={
               isEdit ? (
                 <>
+                <DeleteCompany />
                   <Button
                     color="primary"
                     variant="outlined"

@@ -6,7 +6,7 @@ import { otpPassword, resendOtpPassword } from "../../services/authServices";
 import { useTitle } from "../../hooks/useTitle";
 
 function ForgotOtp() {
-  useTitle("Check OTP - IT Job");
+  useTitle("Check OTP / IT Job");
   const navigate = useNavigate();
   const [messageApi, contextHolder] = message.useMessage();
   const onFinish = async (values) => {

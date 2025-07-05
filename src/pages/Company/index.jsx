@@ -6,7 +6,7 @@ import Goback from "../../components/Goback";
 import { useTitle } from "../../hooks/useTitle";
 
 function Company() {
-  useTitle("Trang Nhà Tuyển Dụng - IT Job");
+  useTitle("Trang Nhà Tuyển Dụng / IT Job");
   const [company, setCompany] = useState([]);
 
   const [messageApi, contextHolder] = message.useMessage();

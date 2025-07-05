@@ -7,7 +7,7 @@ import Goback from "../../components/Goback";
 import { useTitle } from "../../hooks/useTitle";
 
 function JobDetailAdmin() {
-  useTitle("Job detail - IT Job");
+  useTitle("Job detail / IT Job");
   const { id } = useParams();
   const [jobDetail, setJobDetail] = useState({});
   const [messageApi, contextHolderMessage] = message.useMessage();

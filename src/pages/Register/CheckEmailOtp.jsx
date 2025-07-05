@@ -11,7 +11,7 @@ import { fetchUser } from "../../redux/actions/auth.action";
 import { useTitle } from "../../hooks/useTitle";
 
 function CheckEmailOtp() {
-  useTitle("Check Email - IT Job");
+  useTitle("Check Email / IT Job");
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [messageApi, contextHolder] = message.useMessage();

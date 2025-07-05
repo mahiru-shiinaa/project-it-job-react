@@ -3,7 +3,7 @@ import CVList from "./CVList";
 
 
 function CVManage() {
-    useTitle("Quản lý CV - IT Job");
+    useTitle("Quản lý CV / IT Job");
 
     return (
         <>

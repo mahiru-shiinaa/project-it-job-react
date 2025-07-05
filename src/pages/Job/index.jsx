@@ -8,7 +8,7 @@ import { useSearchParams } from "react-router-dom";
 import { useTitle } from "../../hooks/useTitle";
 
 function Job() {
-  useTitle("Danh sách job - IT Job");
+  useTitle("Danh sách job / IT Job");
     const [dataFinal, setDataFinal] = useState([]);
      // Khối Pagination
     const [searchParams, setSearchParams] = useSearchParams();

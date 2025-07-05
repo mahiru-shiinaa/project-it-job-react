@@ -34,7 +34,7 @@ import { useTitle } from "../../hooks/useTitle";
 const { TextArea } = Input;
 
 function JobDetail() {
-  useTitle("Detail Job - IT Job");
+  useTitle("Detail Job / IT Job");
   const { id } = useParams();
   const [jobDetail, setJobDetail] = useState();
   const [form] = Form.useForm();

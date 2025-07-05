@@ -22,4 +22,6 @@ export const resetPassword = (data) => post(`companys/password/reset`, data);
 
 export const changePassword = (data) => patch(`companys/me/change-password`, data);
 
+export const deleteAccount = () => delete(`companys/me/delete`);
+
 export const getProfile = () => get(`companys/me`);
