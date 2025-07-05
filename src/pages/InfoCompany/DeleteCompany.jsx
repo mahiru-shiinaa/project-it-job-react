@@ -16,7 +16,6 @@ function DeleteCompany() {
   const handleDelete = async () => {
         try {
             const res = await deleteAccount();
-            console.log('res', res);
             messageApi.open({
                 type: "success",
                 content:  res.message || "Không thể xóa tài khoản",
