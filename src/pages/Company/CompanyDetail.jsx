@@ -15,8 +15,10 @@ import {
 import { MdOutlineMedicalInformation } from "react-icons/md";
 import JobItem from "../../components/JobItem";
 import "./Company.scss";
+import { useTitle } from "../../hooks/useTitle";
 
 function CompanyDetail() {
+  useTitle("Detail Công ty - IT Job");
   const { id } = useParams();
   const [company, setCompany] = useState([]);
   const [jobs, setJobs] = useState([]);

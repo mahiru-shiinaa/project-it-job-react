@@ -5,8 +5,10 @@ import { changeStatusCV, getDetailCV } from "../../services/cvServices";
 import { getDetailJob } from "../../services/jobServices";
 import { Card, message } from "antd";
 import JobItem from "../../components/JobItem";
+import { useTitle } from "../../hooks/useTitle";
 
 function CVDetail() {
+  useTitle("Chi tiết CV - IT Job");
   const { id } = useParams();
   const [cv, setCV] = useState();
   const [job, setJob] = useState();

@@ -1,7 +1,9 @@
+import { useTitle } from "../../hooks/useTitle";
 import CVList from "./CVList";
 
 
 function CVManage() {
+    useTitle("Quản lý CV - IT Job");
 
     return (
         <>

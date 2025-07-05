@@ -7,9 +7,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchUser } from "../../redux/actions/auth.action";
 import ChangePasswordForm from "../../components/Form/ChangePasswordForm";
 import { changePassword } from "../../services/authServices";
+import { useTitle } from "../../hooks/useTitle";
 const { TextArea } = Input;
 
 function InfoCompany() {
+  useTitle("Admin Detail - IT Job");
   const [info, setInfo] = useState([]);
   const [isEdit, setIsEdit] = useState(false);
   const [form] = Form.useForm();

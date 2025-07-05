@@ -3,8 +3,10 @@ import CheckOtpForm from "../../components/Form/CheckOtpForm";
 import {  getCookie, setCookieCheck } from "../../helpers/cookie";
 import { message } from "antd";
 import { otpPassword, resendOtpPassword } from "../../services/authServices";
+import { useTitle } from "../../hooks/useTitle";
 
 function ForgotOtp() {
+  useTitle("Check OTP - IT Job");
   const navigate = useNavigate();
   const [messageApi, contextHolder] = message.useMessage();
   const onFinish = async (values) => {

@@ -5,8 +5,10 @@ import { Col, Pagination, Row } from "antd";
 import JobItem from "../../components/JobItem";
 import Goback from "../../components/Goback";
 import { useSearchParams } from "react-router-dom";
+import { useTitle } from "../../hooks/useTitle";
 
 function Job() {
+  useTitle("Danh sách job - IT Job");
     const [dataFinal, setDataFinal] = useState([]);
      // Khối Pagination
     const [searchParams, setSearchParams] = useSearchParams();

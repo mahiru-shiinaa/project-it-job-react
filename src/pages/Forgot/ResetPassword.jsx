@@ -6,8 +6,10 @@ import { fetchUser } from "../../redux/actions/auth.action";
 
 import { useNavigate } from "react-router-dom";
 import { resetPassword } from "../../services/authServices";
+import { useTitle } from "../../hooks/useTitle";
 
 function ResetPassword() {
+    useTitle("Reset Password - IT Job");
     const [messageApi, contextHolder] = message.useMessage();
     const dispatch = useDispatch();
     const navigate = useNavigate();

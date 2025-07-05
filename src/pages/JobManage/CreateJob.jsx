@@ -6,8 +6,10 @@ import { getListCity } from "../../services/cityServices";
 import GoBack from "../../components/Goback";
 import { createJob } from "../../services/jobServices";
 import JobDetailForm from "../../components/Form/JobDetailForm";
+import { useTitle } from "../../hooks/useTitle";
 
 function CreateJob() {
+  useTitle("Tạo job - IT Job");
   const [form] = Form.useForm();
   const [tags, setTags] = useState([]);
   const [city, setCity] = useState([]);

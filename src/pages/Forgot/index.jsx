@@ -3,8 +3,10 @@ import ForgotForm from "../../components/Form/ForgotForm";
 import { message } from "antd";
 import { forgotPassword } from "../../services/authServices";
 import { setCookieCheck } from "../../helpers/cookie";
+import { useTitle } from "../../hooks/useTitle";
 
 function Forgot() {
+    useTitle("Forgot Password / IT Job");
     const navigate = useNavigate();
     const [messageApi, contextHolder] = message.useMessage();
     const onFinish = async (values) => {

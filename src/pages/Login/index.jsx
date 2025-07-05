@@ -5,8 +5,10 @@ import { login } from "../../services/authServices";
 import { useDispatch } from "react-redux";
 import { fetchUser } from "../../redux/actions/auth.action";
 import Container from "../../components/Container";
+import { useTitle } from "../../hooks/useTitle";
 
 function Login() {
+  useTitle("Đăng nhập / IT Job");
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [messageApi, contextHolder] = message.useMessage();

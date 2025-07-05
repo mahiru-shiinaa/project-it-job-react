@@ -4,8 +4,10 @@ import { useEffect, useState } from "react";
 import { getDetailJob } from "../../services/jobServices";
 import { message, Tag } from "antd";
 import Goback from "../../components/Goback";
+import { useTitle } from "../../hooks/useTitle";
 
 function JobDetailAdmin() {
+  useTitle("Job detail - IT Job");
   const { id } = useParams();
   const [jobDetail, setJobDetail] = useState({});
   const [messageApi, contextHolderMessage] = message.useMessage();

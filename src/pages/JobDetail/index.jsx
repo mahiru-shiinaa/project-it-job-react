@@ -29,10 +29,12 @@ import { getDetailCompany } from "../../services/companyServices";
 import Goback from "../../components/Goback";
 import { createCV } from "../../services/cvServices";
 import "./JobDetail.scss";
+import { useTitle } from "../../hooks/useTitle";
 
 const { TextArea } = Input;
 
 function JobDetail() {
+  useTitle("Detail Job - IT Job");
   const { id } = useParams();
   const [jobDetail, setJobDetail] = useState();
   const [form] = Form.useForm();

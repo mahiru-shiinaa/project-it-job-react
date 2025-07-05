@@ -3,8 +3,10 @@ import { useSearchParams } from "react-router-dom";
 import { getAllJob } from "../../services/jobServices";
 import { Tag, Pagination, message } from "antd";
 import SearchList from "../../components/SearchForm/SearchList";
+import { useTitle } from "../../hooks/useTitle";
 
 function Search() {
+  useTitle("Trang tìm kiếm - IT Job");
   const [searchParams, setSearchParams] = useSearchParams();
   const [data, setData] = useState([]);
   

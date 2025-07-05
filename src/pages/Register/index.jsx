@@ -5,8 +5,10 @@ import { cancelRegister, register } from "../../services/authServices";
 import { useState } from "react";
 import { deleteCookie, getCookie, setCookieCheck } from "../../helpers/cookie";
 import Container from "../../components/Container";
+import { useTitle } from "../../hooks/useTitle";
 
 function Register() {
+  useTitle("Đăng ký / IT Job");
   const [messageApi, contextHolder] = message.useMessage();
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);

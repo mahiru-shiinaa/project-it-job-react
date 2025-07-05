@@ -3,8 +3,10 @@ import { getAllCompany } from "../../services/companyServices";
 import { Card, Col, message, Pagination, Row } from "antd";
 import { Link, useSearchParams } from "react-router-dom";
 import Goback from "../../components/Goback";
+import { useTitle } from "../../hooks/useTitle";
 
 function Company() {
+  useTitle("Trang Nhà Tuyển Dụng - IT Job");
   const [company, setCompany] = useState([]);
 
   const [messageApi, contextHolder] = message.useMessage();
