@@ -1,4 +1,3 @@
-import Container from "../Container";
 import { Button, Card, Col, Form, Input, Row } from "antd";
 import { runes } from "runes2";
 import logo from "../../assets/images/logo.png";
@@ -10,8 +9,7 @@ function RegisterForm(props) {
   const navigate = useNavigate();
   return (
     <>
-      <Container>
-        <Row justify={"center"}>
+              <Row justify={"center"}>
           <Col span={24}>
             <Card className="card-register">
               <div className="card-register__header">
@@ -106,7 +104,6 @@ function RegisterForm(props) {
             </Card>
           </Col>
         </Row>
-      </Container>
     </>
   );
 }

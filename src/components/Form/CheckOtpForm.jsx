@@ -1,6 +1,5 @@
 import { Button, Card, Col, Form, Input, Row } from "antd";
 import { useEffect, useState } from "react";
-import Container from "../Container";
 import iconotp from "../../assets/images/iconotp.png";
 import "./Form.scss"
 function CheckOtpForm(props) {
@@ -27,7 +26,7 @@ function CheckOtpForm(props) {
 
   return (
     <>
-      <Container>
+      
         <Card className="card-otp">
           <Row justify={"center"}>
             <Col span={24}>
@@ -74,7 +73,6 @@ function CheckOtpForm(props) {
             </Col>
           </Row>
         </Card>
-      </Container>
     </>
   );
 }

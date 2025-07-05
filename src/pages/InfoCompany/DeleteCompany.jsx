@@ -5,7 +5,6 @@ import { deleteAccount } from "../../services/authServices";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { fetchUser } from "../../redux/actions/auth.action";
-import Container from "../../components/Container";
 
 
 function DeleteCompany() {
@@ -37,7 +36,7 @@ function DeleteCompany() {
 
   return (
     <>
-      <Container>{contextHolder}</Container>
+      {contextHolder}
       <Button type="primary" className="mr-10" danger onClick={() => setOpen(true)}>
         Xóa tài khoản
       </Button>

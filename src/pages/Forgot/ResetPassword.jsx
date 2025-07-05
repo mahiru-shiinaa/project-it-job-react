@@ -7,7 +7,6 @@ import { fetchUser } from "../../redux/actions/auth.action";
 import { useNavigate } from "react-router-dom";
 import { resetPassword } from "../../services/authServices";
 import { useTitle } from "../../hooks/useTitle";
-import Container from "../../components/Container";
 
 function ResetPassword() {
     useTitle("Reset Password / IT Job");
@@ -46,7 +45,7 @@ function ResetPassword() {
     }
     return (
         <>
-            <Container>{contextHolder}</Container>
+            {contextHolder}
             <ResetPasswordForm onFinish={onFinish} />
         </>
     );

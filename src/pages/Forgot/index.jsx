@@ -4,7 +4,7 @@ import { message } from "antd";
 import { forgotPassword } from "../../services/authServices";
 import { setCookieCheck } from "../../helpers/cookie";
 import { useTitle } from "../../hooks/useTitle";
-import Container from "../../components/Container";
+
 
 function Forgot() {
     useTitle("Forgot Password / IT Job");
@@ -31,7 +31,7 @@ function Forgot() {
     }
     return (
         <>
-            <Container>{contextHolder}</Container>
+            {contextHolder}
             <ForgotForm onFinish={onFinish} />
         </>
     );

@@ -5,7 +5,6 @@ import { getDetailJob } from "../../services/jobServices";
 import { message, Tag } from "antd";
 import Goback from "../../components/Goback";
 import { useTitle } from "../../hooks/useTitle";
-import Container from "../../components/Container";
 
 function JobDetailAdmin() {
   useTitle("Job detail / IT Job");
@@ -31,7 +30,7 @@ function JobDetailAdmin() {
   }, []);
   return (
     <>
-      <Container>{contextHolderMessage}</Container>
+      {contextHolderMessage}
     <Goback />
       <h1 className="mb-10">Chi tiết công việc</h1>
       {jobDetail && (

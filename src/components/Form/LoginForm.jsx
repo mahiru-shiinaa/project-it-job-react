@@ -1,4 +1,3 @@
-import Container from "../Container";
 import { Button, Card, Col, Input, Row, Form } from "antd";
 import { useNavigate } from "react-router-dom";
 import { runes } from "runes2";
@@ -9,8 +8,7 @@ function LoginForm(props) {
   const navigate = useNavigate();
   return (
     <>
-      <Container>
-        <Row justify={"center"}>
+              <Row justify={"center"}>
           <Col span={24}>
             <Card className="card-login">
               <div className="card-login__header">
@@ -82,7 +80,6 @@ function LoginForm(props) {
             </Card>
           </Col>
         </Row>
-      </Container>
     </>
   );
 }

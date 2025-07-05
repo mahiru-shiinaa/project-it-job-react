@@ -1,5 +1,4 @@
 import { Button, Col, Form, Input, Row } from "antd";
-import Container from "../Container";
 import forgot from "../../assets/images/forgot.png";
 import "./Form.scss";
 import { useNavigate } from "react-router-dom";
@@ -8,7 +7,7 @@ function ForgotForm(props) {
   const navigate = useNavigate();
   return (
     <>
-      <Container>
+     
         <div className="card-email">
           <Row justify={"center"}>
             <Col span={24}>
@@ -64,7 +63,7 @@ function ForgotForm(props) {
             </Col>
           </Row>
         </div>
-      </Container>
+    
     </>
   );
 }

@@ -4,7 +4,6 @@ import RegisterForm from "../../components/Form/RegisterForm";
 import { cancelRegister, register } from "../../services/authServices";
 import { useState } from "react";
 import { deleteCookie, getCookie, setCookieCheck } from "../../helpers/cookie";
-import Container from "../../components/Container";
 import { useTitle } from "../../hooks/useTitle";
 
 function Register() {
@@ -56,7 +55,7 @@ function Register() {
   };
   return (
     <>
-      <Container>{contextHolder}</Container>
+      {contextHolder}
       <Spin
         spinning={spinning}
         tip={
@@ -66,9 +65,9 @@ function Register() {
         }
         size="large"
       >
-        <Container>
+        
           <RegisterForm onFinish={onFinish} />
-        </Container>
+        
       </Spin>
 
       <Modal

@@ -4,7 +4,7 @@ import { getCookie, setCookieCheck } from "../../helpers/cookie";
 import { message } from "antd";
 import { otpPassword, resendOtpPassword } from "../../services/authServices";
 import { useTitle } from "../../hooks/useTitle";
-import Container from "../../components/Container";
+
 
 function ForgotOtp() {
   useTitle("Check OTP / IT Job");
@@ -52,7 +52,7 @@ function ForgotOtp() {
   //navigate("/companys/password/reset");
   return (
     <>
-      <Container>{contextHolder}</Container>
+      {contextHolder}
 
       <CheckOtpForm onFinish={onFinish} onResend={onResend} />
     </>

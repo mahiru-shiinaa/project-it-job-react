@@ -4,7 +4,6 @@ import { message } from "antd";
 import { login } from "../../services/authServices";
 import { useDispatch } from "react-redux";
 import { fetchUser } from "../../redux/actions/auth.action";
-import Container from "../../components/Container";
 import { useTitle } from "../../hooks/useTitle";
 
 function Login() {
@@ -34,10 +33,11 @@ function Login() {
   return (
     <>
       
-      <Container>
+      
         {contextHolder}
+        
         <LoginForm onFinish={onFinish} />
-      </Container>
+      
     </>
   );
 }

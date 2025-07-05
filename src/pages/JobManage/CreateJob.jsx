@@ -7,7 +7,6 @@ import GoBack from "../../components/Goback";
 import { createJob } from "../../services/jobServices";
 import JobDetailForm from "../../components/Form/JobDetailForm";
 import { useTitle } from "../../hooks/useTitle";
-import Container from "../../components/Container";
 
 function CreateJob() {
   useTitle("Tạo job / IT Job");
@@ -63,7 +62,7 @@ function CreateJob() {
   };
   return (
     <>
-      <Container>{contextHolder}</Container>
+      {contextHolder}
       <GoBack />
       <h1>Tạo job mới</h1>
       <JobDetailForm
