@@ -17,9 +17,8 @@ function CVList(props) {
   const [pagination, setPagination] = useState({
     current: 1,
     pageSize: 5,
-    
   });
-    const handleTableChange = (pagination) => {
+  const handleTableChange = (pagination) => {
     setPagination(pagination);
   };
   const fetchApi = async () => {
@@ -55,7 +54,7 @@ function CVList(props) {
       title: "STT",
       dataIndex: "",
       key: "stt",
-       render: (_, __, index) =>
+      render: (_, __, index) =>
         (pagination.current - 1) * pagination.pageSize + index + 1,
     },
     {
@@ -104,6 +103,11 @@ function CVList(props) {
       dataIndex: "statusRead",
       key: "statusRead",
       sorter: (a, b) => a.statusRead - b.statusRead,
+      onFilter: (value, record) => record.statusRead === (value === "true"),
+      filters: [
+        { text: "Đã đọc", value: "true" },
+        { text: "Chưa đọc", value: "false" },
+      ],
       render: (statusRead) => {
         return (
           <>
@@ -146,8 +150,8 @@ function CVList(props) {
         dataSource={data}
         columns={columns}
         rowKey={"_id"}
-         pagination={pagination}
-         onChange={handleTableChange}
+        pagination={pagination}
+        onChange={handleTableChange}
         className={className}
       />
     </>

@@ -117,6 +117,11 @@ function JobList(props) {
       dataIndex: "status",
       key: "status",
       sorter: (a, b) => a.status - b.status,
+      onFilter: (value, record) => record.status === (value === "true"),
+      filters: [
+        { text: "Đang bật", value: "true" },
+        { text: "Đang tắt", value: "false" },
+      ],
       render: (status) => (
         <>
           {status ? (
