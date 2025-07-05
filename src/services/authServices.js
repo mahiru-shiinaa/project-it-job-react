@@ -1,4 +1,4 @@
-import { get, patch, post } from "../utils";
+import { del, get, patch, post } from "../utils";
 
 export const login = (data) => post(`companys/auth/login`, data );
 
@@ -22,6 +22,6 @@ export const resetPassword = (data) => post(`companys/password/reset`, data);
 
 export const changePassword = (data) => patch(`companys/me/change-password`, data);
 
-export const deleteAccount = () => delete(`companys/me/delete`);
+export const deleteAccount = () => del(`companys/me/delete`);
 
 export const getProfile = () => get(`companys/me`);
