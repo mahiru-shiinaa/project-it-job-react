@@ -40,7 +40,6 @@ function JobDetail() {
   const [form] = Form.useForm();
   const [noti, contextHolder] = notification.useNotification();
   const [messageApi, contextHolderMessage] = message.useMessage();
-  const rules = [{ required: true, message: "Bắt buộc nhập!" }];
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -177,22 +176,22 @@ function JobDetail() {
             <Form layout="vertical" form={form} onFinish={onFinish}>
               <Row gutter={20}>
                 <Col span={6}>
-                  <Form.Item label="Họ tên" name="name" rules={rules}>
+                  <Form.Item label="Họ tên" name="name" rules={[{ required: true, message: "Vui lòng nhập tên!" }]}>
                     <Input />
                   </Form.Item>
                 </Col>
                 <Col span={6}>
-                  <Form.Item label="Số điện thoại" name="phone" rules={rules}>
+                  <Form.Item label="Số điện thoại" name="phone" rules={[{ required: true, message: "Vui lòng nhập số điện thoại!" }]}>
                     <Input />
                   </Form.Item>
                 </Col>
                 <Col span={6}>
-                  <Form.Item label="Email" name="email" rules={rules}>
+                  <Form.Item label="Email" name="email" rules={[{ required: true, message: "Vui lòng nhập email!" }]}>
                     <Input />
                   </Form.Item>
                 </Col>
                 <Col span={6}>
-                  <Form.Item label="Thành phố" name="city" rules={rules}>
+                  <Form.Item label="Thành phố" name="city" rules={[{ required: true, message: "Vui lòng chọn thành phố!" }]}>
                     <Select>
                       {jobDetail.city.map((c, i) => (
                         <Select.Option key={i} value={c}>
@@ -206,7 +205,7 @@ function JobDetail() {
                   <Form.Item
                     label="Giới thiệu bản thân"
                     name="description"
-                    rules={rules}
+                    rules={[{ required: true, message: "Vui lòng nhập giới thiệu bản thân!" }]}
                   >
                     <TextArea rows={4} />
                   </Form.Item>
@@ -215,7 +214,7 @@ function JobDetail() {
                   <Form.Item
                     label="Link các dự án đã làm"
                     name="linkProject"
-                    rules={rules}
+                    rules={[{ required: true, message: "Vui lòng nhập link dự án đã làm!" }]}
                   >
                     <TextArea rows={4} />
                   </Form.Item>
