@@ -100,6 +100,7 @@ function CVList(props) {
       title: "Ngày gửi",
       dataIndex: "createdAt",
       key: "createdAt",
+      sorter: (a, b) => a.createdAt - b.createdAt
     },
     {
       title: "Trạng thái",
