@@ -17,6 +17,9 @@ function CVList(props) {
   const [pagination, setPagination] = useState({
     current: 1,
     pageSize: 5,
+    showSizeChanger: true, // Cho phép người dùng chọn số dòng / trang
+    pageSizeOptions: ["5", "10", "20", "50"], // Các lựa chọn số dòng / trang
+    showQuickJumper: true, // Cho phép nhảy trang
   });
   const handleTableChange = (pagination) => {
     setPagination(pagination);
