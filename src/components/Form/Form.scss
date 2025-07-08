@@ -1,138 +1,132 @@
 .card-otp {
-   width: 500px;
-   margin: auto auto;
+  width: 500px;
+  margin: auto auto;
   // border: 1.5px solid #dfdfdf; // viền đậm hơn
-   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
-    &__icon {
-        text-align: center;
-        img {
-            width: 130px;
-            height: 130px;
-        }
+  &__icon {
+    text-align: center;
+    img {
+      width: 130px;
+      height: 130px;
     }
-    &__title {
-        text-align: center;
-        h2 {
-            margin-bottom: 5px;
-        }
-        p {
-            margin-top: 0px;
-            font-size: 12px;
-            margin-bottom: 25px;
-        }
+  }
+  &__title {
+    text-align: center;
+    h2 {
+      margin-bottom: 5px;
     }
+    p {
+      margin-top: 0px;
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+  }
 
-    &__send {
-        font-weight: bold;
-        padding: 20px;
-        border-radius: 25px;
-        font-size: 15px;
-    }
+  &__send {
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 15px;
+  }
 
-    &__resend {
-        margin-top: 15px;
-    }
-
+  &__resend {
+    margin-top: 15px;
+  }
 }
-
 
 .card-email {
-   width: 500px;
-   margin: auto auto;  
-    display: flex;
+  width: 500px;
+  margin: auto auto;
+  display: flex;
   justify-content: center;
-  align-items: center;    
-  height: 70vh;          
-    &__icon {
-        text-align: center;
-        img {
-            width: 220px;
-            
-        }
+  align-items: center;
+  height: 70vh;
+  &__icon {
+    text-align: center;
+    img {
+      width: 220px;
     }
-    &__title {
-        text-align: center;
-        h2 {
-            margin-bottom: 5px;
-            font-size: 30px;
-        }
-        p {
-            margin-top: 20px;
-            font-size: 13px;
-            margin-bottom: 35px;
-        }
+  }
+  &__title {
+    text-align: center;
+    h2 {
+      margin-bottom: 5px;
+      font-size: 30px;
     }
+    p {
+      margin-top: 20px;
+      font-size: 13px;
+      margin-bottom: 35px;
+    }
+  }
 
-    &__input {
-        border-radius: 30px;
-        text-align: center;
-        font-weight: 600;
-        border: 1.5px solid #4096ff9d;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+  &__input {
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+    border: 1.5px solid #4096ff9d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
-    &__send {
-        font-weight: bold;
-        padding: 20px;
-        border-radius: 25px;
-        font-size: 15px;
-        width: 100%;
-    }
+  &__send {
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    width: 100%;
+  }
 
-    &__back {
-        margin-top: 15px;
-    }
-
+  &__back {
+    margin-top: 15px;
+  }
 }
 .card-reset-password {
-   width: 500px;
-   margin: auto auto;  
-    display: flex;
+  width: 500px;
+  margin: auto auto;
+  display: flex;
   justify-content: center;
-  align-items: center;    
-  height: 70vh;          
-    &__icon {
-        text-align: center;
-        img {
-            width: 280px;
-            
-        }
+  align-items: center;
+  height: 70vh;
+  &__icon {
+    text-align: center;
+    img {
+      width: 280px;
     }
-    &__title {
-        text-align: center;
-        h2 {
-            margin-bottom: 5px;
-            font-size: 33px;
-        }
-        p {
-            margin-top: 13px;
-            font-size: 15px;
-            margin-bottom: 35px;
-        }
+  }
+  &__title {
+    text-align: center;
+    h2 {
+      margin-bottom: 5px;
+      font-size: 33px;
     }
-
-    &__input {
-        border-radius: 30px;
-        text-align: center;
-        font-weight: 600;
-        border: 1.5px solid #4096ff9d;
-        padding-top: 10px;
-        padding-left: 20px;
-        padding-bottom: 10px;
+    p {
+      margin-top: 13px;
+      font-size: 15px;
+      margin-bottom: 35px;
     }
+  }
 
-    &__send {
-        font-weight: bold;
-        padding: 20px;
-        margin-top: 20px;
-        border-radius: 25px;
-        font-size: 15px;
-        width: 100%;
-    }
+  &__input {
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+    border: 1.5px solid #4096ff9d;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
 
-
+  &__send {
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    width: 100%;
+  }
 }
 .card-change-password {
   display: flex;
@@ -143,6 +137,21 @@
   height: 80vh;
   max-width: 600px;
   margin: 0 auto;
+  // Responsive height
+  @media (min-width: 1600px) {
+    // xxl: ≥ 1600px
+    height: 65vh;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1599px) {
+    // xl: 1200 - 1599px
+    height: 80vh;
+  }
+
+  @media (max-width: 1199px) {
+    // lg trở xuống: giữ 80vh
+    height: 80vh;
+  }
 
   &__icon {
     text-align: center;
@@ -150,11 +159,21 @@
     img {
       width: 280px;
 
-      @media (max-width: 1599px) { width: 250px; }
-      @media (max-width: 1199px) { width: 220px; }
-      @media (max-width: 991px) { width: 200px; }
-      @media (max-width: 767px) { width: 180px; }
-      @media (max-width: 575px) { width: 150px; }
+      @media (max-width: 1599px) {
+        width: 250px;
+      }
+      @media (max-width: 1199px) {
+        width: 220px;
+      }
+      @media (max-width: 991px) {
+        width: 200px;
+      }
+      @media (max-width: 767px) {
+        width: 180px;
+      }
+      @media (max-width: 575px) {
+        width: 150px;
+      }
     }
   }
 
@@ -165,20 +184,39 @@
       margin-bottom: 5px;
       margin-top: 5px;
       font-size: 33px;
-      @media (max-width: 1599px) { font-size: 30px; }
-      @media (max-width: 1199px) { font-size: 28px; }
-      @media (max-width: 991px) { font-size: 26px; }
-      @media (max-width: 767px) { font-size: 24px; }
-      @media (max-width: 575px) { font-size: 22px; }
+      @media (max-width: 1599px) {
+        font-size: 30px;
+      }
+      @media (max-width: 1199px) {
+        font-size: 28px;
+      }
+      @media (max-width: 991px) {
+        font-size: 26px;
+      }
+      @media (max-width: 767px) {
+        font-size: 24px;
+      }
+      @media (max-width: 575px) {
+        font-size: 22px;
+      }
     }
 
     p {
       margin-top: 13px;
       font-size: 15px;
       margin-bottom: 25px;
-      @media (max-width: 991px) { font-size: 14px; margin-bottom: 30px; }
-      @media (max-width: 767px) { font-size: 13px; margin-bottom: 25px; }
-      @media (max-width: 575px) { font-size: 12px; margin-bottom: 20px; }
+      @media (max-width: 991px) {
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+      @media (max-width: 767px) {
+        font-size: 13px;
+        margin-bottom: 25px;
+      }
+      @media (max-width: 575px) {
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -234,150 +272,159 @@
   }
 
   // Responsive max-width tổng thể card
-  @media (max-width: 1599px) { max-width: 600px; }
-  @media (max-width: 1199px) { max-width: 550px; }
-  @media (max-width: 991px)  { max-width: 500px; }
-  @media (max-width: 767px)  { max-width: 450px; }
-  @media (max-width: 575px)  {
+  @media (max-width: 1599px) {
+    max-width: 600px;
+  }
+  @media (max-width: 1199px) {
+    max-width: 550px;
+  }
+  @media (max-width: 991px) {
+    max-width: 500px;
+  }
+  @media (max-width: 767px) {
+    max-width: 450px;
+  }
+  @media (max-width: 575px) {
     max-width: 90%;
     padding: 20px 10px;
   }
 }
 
-
 .card-login {
-    max-width: 600px;
-    margin: auto auto; 
-    padding: 20px;
-    
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    &__header {
-        text-align: center;
-        img {
-            width: 200px;
-        }
+  max-width: 600px;
+  margin: auto auto;
+  padding: 20px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  &__header {
+    text-align: center;
+    img {
+      width: 200px;
     }
-    &__title {
-        text-align: center;
-        h3 {
-            font-size: 30px;
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
-        p {
-            margin-top: 0px;
-            font-size: 15px;
-            margin-bottom: 25px;
-        }
+  }
+  &__title {
+    text-align: center;
+    h3 {
+      font-size: 30px;
+      margin-top: 10px;
+      margin-bottom: 5px;
     }
-    &__btn {
-        width: 100%;
-        font-weight: bold;
-        font-size: 20px;
-        padding-top: 25px;
-        padding-bottom: 25px;
+    p {
+      margin-top: 0px;
+      font-size: 15px;
+      margin-bottom: 25px;
     }
-    &__input {
-        border-radius: 10px;
-        font-weight: 600;
-        padding-left: 15px;
-        border: 1.5px solid #4096ff9d;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        font-weight: 500;
-    }
-    &__forgot {
-        margin: 0;
-        font-weight: 600;
-        margin-top: -50px;
-        padding: 0;
-    }
-    &__footer {
-        margin-top: 20px;
-        margin-bottom: 0px;
-    }
-    &__register {
-        font-weight: 600;
-        padding-left: 5px;
-    }
+  }
+  &__btn {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  &__input {
+    border-radius: 10px;
+    font-weight: 600;
+    padding-left: 15px;
+    border: 1.5px solid #4096ff9d;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 500;
+  }
+  &__forgot {
+    margin: 0;
+    font-weight: 600;
+    margin-top: -50px;
+    padding: 0;
+  }
+  &__footer {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  &__register {
+    font-weight: 600;
+    padding-left: 5px;
+  }
 }
 .card-register {
-    max-width: 600px;
-    margin: auto auto; 
-    padding: 20px;
-    
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    &__header {
-        text-align: center;
-        img {
-            width: 200px;
-        }
+  max-width: 600px;
+  margin: auto auto;
+  padding: 20px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  &__header {
+    text-align: center;
+    img {
+      width: 200px;
     }
-    &__title {
-        text-align: center;
-        h3 {
-            font-size: 30px;
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
-        p {
-            margin-top: 0px;
-            font-size: 15px;
-            margin-bottom: 25px;
-        }
+  }
+  &__title {
+    text-align: center;
+    h3 {
+      font-size: 30px;
+      margin-top: 10px;
+      margin-bottom: 5px;
     }
-    &__btn {
-        width: 100%;
-        font-weight: bold;
-        font-size: 20px;
-        padding-top: 25px;
-        padding-bottom: 25px;
+    p {
+      margin-top: 0px;
+      font-size: 15px;
+      margin-bottom: 25px;
     }
-    &__input {
-        border-radius: 10px;
-        font-weight: 600;
-        padding-left: 15px;
-        border: 1.5px solid #4096ff9d;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        font-weight: 500;
-    }
-    &__forgot {
-        margin: 0;
-        font-weight: 600;
-        margin-top: -50px;
-        padding: 0;
-    }
-    &__footer {
-        margin-top: 20px;
-        margin-bottom: 0px;
-    }
-    &__register {
-        font-weight: 600;
-        padding-left: 5px;
-    }
+  }
+  &__btn {
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  &__input {
+    border-radius: 10px;
+    font-weight: 600;
+    padding-left: 15px;
+    border: 1.5px solid #4096ff9d;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 500;
+  }
+  &__forgot {
+    margin: 0;
+    font-weight: 600;
+    margin-top: -50px;
+    padding: 0;
+  }
+  &__footer {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+  &__register {
+    font-weight: 600;
+    padding-left: 5px;
+  }
 }
 
 #registerForm > .ant-form-item {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .delete-account-wrapper {
-  width: 100%;           // ✅ Phần bọc ngoài
+  width: 100%; // ✅ Phần bọc ngoài
   display: flex;
   justify-content: center;
 }
 
 .card-delete-account {
-  width: 100%;           // ✅ Chiếm toàn bộ width Modal
-  max-width: 500px;      // ✅ Không quá to
+  width: 100%; // ✅ Chiếm toàn bộ width Modal
+  max-width: 500px; // ✅ Không quá to
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 30px 50px;
-  height: auto;          // ❌ Không nên cố định height cứng
-  margin: 0 auto;        // ✅ Center ngang
+  height: auto; // ❌ Không nên cố định height cứng
+  margin: 0 auto; // ✅ Center ngang
 
   &__icon {
     text-align: center;
@@ -404,8 +451,6 @@
     }
   }
 }
-
-
 
 .modal-body-scroll {
   max-height: calc(100vh - 150px);
