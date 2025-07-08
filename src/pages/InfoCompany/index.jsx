@@ -219,8 +219,8 @@ function InfoCompany() {
               xs: "90%",
               sm: "80%",
               md: "70%",
-              lg: "60%",
-              xl: "50%",
+              lg: "30%",
+              xl: "35%",
               xxl: "40%",
             }}
           >
