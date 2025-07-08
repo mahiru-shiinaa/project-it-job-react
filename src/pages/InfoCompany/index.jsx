@@ -218,10 +218,10 @@ function InfoCompany() {
             width={{
               xs: "90%",
               sm: "80%",
-              md: "70%",
-              lg: "60%",
-              xl: "50%",
-              xxl: "40%",
+              md: "35%",
+              lg: "35%",
+              xl: "35%",
+              xxl: "35%",
             }}
           >
             <div className="modal-body-scroll">
