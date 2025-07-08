@@ -1,5 +1,5 @@
 import { Button, Col, Form, Input, Row } from "antd";
-import reset from "../../assets/images/reset.png";
+import reset2 from "../../assets/images/reset2.png";
 import "./Form.scss";
 import { runes } from "runes2";
 
@@ -12,7 +12,7 @@ function ChangePasswordForm(props) {
           <Row justify={"center"}>
             <Col span={24}>
               <div className="card-change-password__icon">
-                <img src={reset} alt="" />
+                <img src={reset2} alt="" />
               </div>
             </Col>
             <Col span={24}>
