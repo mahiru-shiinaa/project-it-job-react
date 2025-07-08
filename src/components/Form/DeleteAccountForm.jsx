@@ -8,8 +8,9 @@ const { Title, Text } = Typography;
 function DeleteAccountForm({ onDelete, onCancel }) {
   return (
     
+    <div className="delete-account-wrapper">
       <div className="card-delete-account">
-        <Row justify={"center"}>
+        <Row justify="center">
           <Col span={24}>
             <div className="card-delete-account__icon">
               <img src={deleteIcon} alt="delete" />
@@ -18,7 +19,9 @@ function DeleteAccountForm({ onDelete, onCancel }) {
           <Col span={24}>
             <div className="card-delete-account__title">
               <Title level={3}>Xóa tài khoản?</Title>
-              <Text>Hành động này không thể hoàn tác. Bạn có chắc chắn muốn xóa tài khoản không?</Text>
+              <Text>
+                Hành động này không thể hoàn tác. Bạn có chắc chắn muốn xóa tài khoản không?
+              </Text>
             </div>
           </Col>
           <Col span={24}>
@@ -43,6 +46,7 @@ function DeleteAccountForm({ onDelete, onCancel }) {
           </Col>
         </Row>
       </div>
+    </div>
   );
 }
 

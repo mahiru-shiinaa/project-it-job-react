@@ -135,52 +135,114 @@
 
 }
 .card-change-password {
-    display: flex;
-    padding: 40px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;    
-  height: 70vh;          
-    &__icon {
-        text-align: center;
-        img {
-            width: 280px;
-            
-        }
-    }
-    &__title {
-        text-align: center;
-        h2 {
-            margin-bottom: 5px;
-            font-size: 33px;
-        }
-        p {
-            margin-top: 13px;
-            font-size: 15px;
-            margin-bottom: 35px;
-        }
-    }
+  align-items: center;
+  padding: 40px 20px;
+  height: 70vh;
+  max-width: 700px;
+  margin: 0 auto;
 
-    &__input {
-        border-radius: 30px;
-        text-align: center;
-        font-weight: 600;
-        border: 1.5px solid #4096ff9d;
-        padding-top: 10px;
-        padding-left: 20px;
-        padding-bottom: 10px;
-    }
+  &__icon {
+    text-align: center;
 
-    &__send {
-        font-weight: bold;
-        padding: 20px;
-        margin-top: 20px;
-        border-radius: 25px;
-        font-size: 15px;
-        width: 100%;
+    img {
+      width: 280px;
+
+      @media (max-width: 1599px) { width: 250px; }
+      @media (max-width: 1199px) { width: 220px; }
+      @media (max-width: 991px) { width: 200px; }
+      @media (max-width: 767px) { width: 180px; }
+      @media (max-width: 575px) { width: 150px; }
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    h2 {
+      margin-bottom: 5px;
+      font-size: 33px;
+      @media (max-width: 1599px) { font-size: 30px; }
+      @media (max-width: 1199px) { font-size: 28px; }
+      @media (max-width: 991px) { font-size: 26px; }
+      @media (max-width: 767px) { font-size: 24px; }
+      @media (max-width: 575px) { font-size: 22px; }
     }
 
+    p {
+      margin-top: 13px;
+      font-size: 15px;
+      margin-bottom: 35px;
+      @media (max-width: 991px) { font-size: 14px; margin-bottom: 30px; }
+      @media (max-width: 767px) { font-size: 13px; margin-bottom: 25px; }
+      @media (max-width: 575px) { font-size: 12px; margin-bottom: 20px; }
+    }
+  }
 
+  &__input {
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+    border: 1.5px solid #4096ff9d;
+    font-size: 16px;
+    padding: 12px 20px;
+
+    @media (max-width: 991px) {
+      font-size: 15px;
+      padding: 10px 18px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 13px;
+      padding: 7px 14px;
+    }
+  }
+
+  &__send {
+    font-weight: bold;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 16px;
+    padding: 20px;
+    margin-top: 20px;
+
+    @media (max-width: 991px) {
+      font-size: 15px;
+      padding: 18px;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+      padding: 16px;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 13px;
+      padding: 14px;
+      margin-top: 14px;
+    }
+  }
+
+  // Responsive max-width tổng thể card
+  @media (max-width: 1599px) { max-width: 600px; }
+  @media (max-width: 1199px) { max-width: 550px; }
+  @media (max-width: 991px)  { max-width: 500px; }
+  @media (max-width: 767px)  { max-width: 450px; }
+  @media (max-width: 575px)  {
+    max-width: 90%;
+    padding: 20px 10px;
+  }
 }
+
 
 .card-login {
     max-width: 600px;
@@ -299,13 +361,22 @@
     margin-bottom: 20px;
 }
 
-.card-delete-account {
-  max-width: 500px;
+.delete-account-wrapper {
+  width: 100%;           // ✅ Phần bọc ngoài
   display: flex;
-  padding: 30px 50px;
+  justify-content: center;
+}
+
+.card-delete-account {
+  width: 100%;           // ✅ Chiếm toàn bộ width Modal
+  max-width: 500px;      // ✅ Không quá to
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  padding: 30px 50px;
+  height: auto;          // ❌ Không nên cố định height cứng
+  margin: 0 auto;        // ✅ Center ngang
 
   &__icon {
     text-align: center;
@@ -331,4 +402,12 @@
       color: #555;
     }
   }
+}
+
+
+
+.modal-body-scroll {
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  padding-right: 8px;
 }

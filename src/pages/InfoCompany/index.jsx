@@ -64,7 +64,7 @@ function InfoCompany() {
         type: "success",
         content: "Đổi mật khẩu thành công",
       });
-      
+
       resetPasswForm.resetFields();
       setOpen(false);
     } catch (err) {
@@ -73,9 +73,7 @@ function InfoCompany() {
         type: "error",
         content: err.response?.data?.message || "Không thể lấy thông tin",
       });
-      
     }
-    
   };
   return (
     <>
@@ -87,7 +85,7 @@ function InfoCompany() {
             extra={
               isEdit ? (
                 <>
-                <DeleteCompany />
+                  <DeleteCompany />
                   <Button
                     color="primary"
                     variant="outlined"
@@ -96,7 +94,13 @@ function InfoCompany() {
                   >
                     Đổi mật khẩu
                   </Button>
-                  <Button color="danger" variant="outlined" onClick={handleCancel}>Hủy</Button>
+                  <Button
+                    color="danger"
+                    variant="outlined"
+                    onClick={handleCancel}
+                  >
+                    Hủy
+                  </Button>
                 </>
               ) : (
                 <>
@@ -206,22 +210,27 @@ function InfoCompany() {
               </Row>
             </Form>
           </Card>
-        <Modal
-        onCancel={() => setOpen(false)}
-        centered
-        open={open}  
-        footer={null}
-        width={{
-          xs: '90%',
-          sm: '80%',
-          md: '70%',
-          lg: '60%',
-          xl: '50%',
-          xxl: '40%',
-        }}
-      >
-        <ChangePasswordForm form={resetPasswForm} onFinish={handleFinishChangePassword} />
-      </Modal>
+          <Modal
+            onCancel={() => setOpen(false)}
+            centered
+            open={open}
+            footer={null}
+            width={{
+              xs: "90%",
+              sm: "80%",
+              md: "70%",
+              lg: "60%",
+              xl: "50%",
+              xxl: "40%",
+            }}
+          >
+            <div className="modal-body-scroll">
+              <ChangePasswordForm
+                form={resetPasswForm}
+                onFinish={handleFinishChangePassword}
+              />
+            </div>
+          </Modal>
         </>
       )}
     </>
