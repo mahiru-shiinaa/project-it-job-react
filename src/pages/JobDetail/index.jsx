@@ -158,14 +158,14 @@ function JobDetail() {
             <h2>
               <FileTextOutlined className="job-detail__icon" /> Mô tả công việc
             </h2>
-            <p>{jobDetail.description}</p>
+            <pre>{jobDetail.description}</pre>
           </div>
 
           <div className="job-detail__company">
             <h2>
               <BankOutlined className="job-detail__icon" /> Giới thiệu công ty
             </h2>
-            <p>{jobDetail.infoCompany?.description}</p>
+            <pre>{jobDetail.infoCompany?.description}</pre>
           </div>
 
           <Card

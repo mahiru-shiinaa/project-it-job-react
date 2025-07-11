@@ -86,12 +86,12 @@ function CompanyDetail() {
                 <h2>
                   <InfoCircleOutlined /> Mô tả công ty
                 </h2>
-                <p>{company.description}</p>
+                <pre>{company.description}</pre>
               </div>
 
               <div className="company-detail__section">
                 <h2> <MdOutlineMedicalInformation fontSize={22} />   Chi tiết khác</h2>
-                <p>{company.detail}</p>
+                <pre>{company.detail}</pre>
               </div>
 
               <div className="company-detail__section company-detail__section--jobs ">

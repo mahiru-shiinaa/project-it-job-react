@@ -16,22 +16,26 @@
 
   &__section {
     h2 {
-        margin-top: 40px;
-        margin-bottom: 10px;
+      margin-top: 40px;
+      margin-bottom: 10px;
       svg {
         color: #0471ff;
       }
     }
-    p {
-      font-size: 20px;
+    pre {
+      white-space: pre-wrap; /* Tự động xuống dòng khi quá dài */
+      word-wrap: break-word; /* Ngắt từ khi quá dài */
+      overflow-x: auto; /* Cho scroll khi thật sự cần thiết */
+      max-width: 100%; /* Không tràn ra ngoài container */
+      font-size: 19px;
       text-align: justify;
       line-height: 1.7;
     }
     &--jobs {
-        margin-top: 50px;
-        h2 {
-            margin-bottom: 20px;
-        }
+      margin-top: 50px;
+      h2 {
+        margin-bottom: 20px;
+      }
     }
   }
 }
