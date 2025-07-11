@@ -29,7 +29,7 @@ function JobList() {
   }, []);
   return (
     <>
-      <h3>Danh sách một job phổ biến</h3>
+      <h3>Danh sách một số job đang ứng tuyển</h3>
       {dataFinal.length > 0 ? (
         <div className="mt-20">
           <Row gutter={[20, 20]}>
