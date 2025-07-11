@@ -9,7 +9,7 @@ function Search() {
   useTitle("Trang tìm kiếm / IT Job");
   const [searchParams, setSearchParams] = useSearchParams();
   const [data, setData] = useState([]);
-  
+
   const [messageApi, contextHolder] = message.useMessage();
 
   const citySearch = searchParams.get("city") || "";
@@ -32,10 +32,12 @@ function Search() {
                   .includes(citySearch.toLowerCase())
               : true;
             const keyWordMatch = keyWordSearch
-              ? item.tags?.some((tag) =>
+              ? item.name.toLowerCase().includes(keyWordSearch.toLowerCase()) ||
+                item.tags?.some((tag) =>
                   tag.toLowerCase().includes(keyWordSearch.toLowerCase())
                 )
               : true;
+
             const isActive = item.status;
             return cityMatch && keyWordMatch && isActive;
           });
@@ -68,11 +70,11 @@ function Search() {
       keyword: keyWordSearch,
       page: newPage,
     });
-     //  Scroll lên đầu trang
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth", // cuộn mượt
-  });
+    //  Scroll lên đầu trang
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // cuộn mượt
+    });
   };
 
   return (
