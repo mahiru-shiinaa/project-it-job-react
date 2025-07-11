@@ -64,9 +64,9 @@ function CVDetail() {
           </div>
           <div className="mb-20">
             <span>Link Project: </span>
-            <p>
+            <pre>
               {cv.linkProject || "Người ứng tuyển không có Project Thực Tế"}
-            </p>
+            </pre>
           </div>
         </Card>
       )}
